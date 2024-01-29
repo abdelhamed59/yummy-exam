@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- loading -->
+    <div class="loading ">
+        <div class="sk-circle">
+            <div class="sk-circle1 sk-child"></div>
+            <div class="sk-circle2 sk-child"></div>
+            <div class="sk-circle3 sk-child"></div>
+            <div class="sk-circle4 sk-child"></div>
+            <div class="sk-circle5 sk-child"></div>
+            <div class="sk-circle6 sk-child"></div>
+            <div class="sk-circle7 sk-child"></div>
+            <div class="sk-circle8 sk-child"></div>
+            <div class="sk-circle9 sk-child"></div>
+            <div class="sk-circle10 sk-child"></div>
+            <div class="sk-circle11 sk-child"></div>
+            <div class="sk-circle12 sk-child"></div>
+          </div>
+    </div>
+
+    <!-- *****************sideBar Section -->
+    <div id="sideBar">
+        <div class="contectSide bg-black text-white  d-flex flex-column justify-content-between px-3 py-5">
+            <ul class="list-unstyled ">
+                <li id="searchLi" class="links link1 position-relative">search</li>
+                <li id="categoryLi" class="links link2 position-relative">Categories</li>
+                <li id="areaLi" class="links link3 position-relative">Area</li>
+                <li id="IngredientLi" class="links link4 position-relative">Ingredients</li>
+                <li id="ContactLi" class="links position-relative link5">Contact Us</li>
+            </ul>
+            <div class="copyright ">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-solid fa-globe"></i>
+                <p class="pe-4">Copyright Â© 2019 All Rights <br>reversed.</p>
+            </div>
+        </div>
+        <div class="logoSide d-flex flex-column justify-content-between align-items-center px-md-3  py-md-5 ">
+            <img src="./images/images.jpg" alt="">
+            <i id="sideIcon" class="fa-solid fa-xmark "></i>
+            <div class="d-flex flex-column ">
+                <i class="fa-solid fa-globe mb-2"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+
+        </div>
+    </div>
+    <!-- **************Home Section -->
+    <div class="container py-5">
+        <div class="row py-5 g-3 " id="homeSection">
+
+
+
+
+
+        </div>
+
+        <!-- *************search input******************* -->
+        <div class="searchInput d-none " id="searchSection">
+            <div class="row mb-5 g-3">
+                <div class="col-md-6">
+                    <input class="w-100 bg-black border-white py-1 px-3 text-white rounded-2" type="text"
+                        placeholder="Search By Name" id="searchByName">
+                </div>
+                <div class="col-md-6">
+                    <input class="w-100 bg-black border-white py-1 px-3 text-white rounded-2" type="text"
+                        placeholder="Search By First Letter" id="searchByLetter">
+                </div>
+
+            </div>
+            <div class="row g-3 py-5 " id="searchRow">
+
+
+
+
+
+
+
+            </div>
+        </div>
+        <!-- ***********category Section******************** -->
+        <div class="category d-none " id="categorySection" >
+            <div class="row g-3 py-5 " id="categoryRow">
+
+
+
+
+
+
+            </div>
+        </div>
+        <!-- **************Area Section************* -->
+        <div class="area d-none" id="areaSection">
+            <div class="row g-3 py-5 " id="areaRow">
+
+
+
+
+
+
+
+            </div>
+        </div>
+        <!-- **************Ingredients Section***************** -->
+        <div class="Ingredients d-none" id="ingredientSection">
+            <div class="row g-3 py-5 " id="IngredientsSection">
+
+
+
+
+
+
+
+            </div>
+        </div>
+        <!-- *******************contact Us section********************** -->
+        <div class="details d-none" id="detailsSection">
+            <div class="row g-3"  id="detailsRow">
+                
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="contactUs container min-vh-100 d-flex d-none justify-content-center align-items-center flex-column "
+        id="contactUs">
+        <div class=" w-75  ">
+            <div class="row g-3 ">
+                <div class="col-md-6">
+                    <input class="w-100 bg-black  border-white py-2 px-3 text-white rounded-2" type="text"
+                        placeholder="Enter Your Name" id="nameInput">
+
+                </div>
+                <div class="col-md-6">
+                    <input class="w-100 bg-black border-white py-2 px-3 text-white rounded-2" type="email"
+                        placeholder="Enter Your Email" id="emailInput" oninput="validateEmailInput()">
+                    <p id="wrongMail" class="bg-danger text-center py-3 rounded-3 fs-5 d-none mt-2">Email not valid
+                        *exemple@yyy.zzz</p>
+                </div>
+                <div class="col-md-6">
+                    <input class="w-100 bg-black border-white py-2 px-3 text-white rounded-2" type="tel"
+                        placeholder="Enter Your Phone" id="phoneInput" oninput="validatePhoneInput()">
+                    <p id="wrongePhone" class="bg-danger text-center py-3 rounded-3 fs-5 d-none mt-2">Enter valid Phone
+                        Number</p>
+                </div>
+                <div class="col-md-6">
+                    <input class="w-100 bg-black border-white py-2 px-3 text-white rounded-2" type="number"
+                        placeholder="Enter Your Age" id="ageInput" oninput="validateAge()">
+                    <p id="wrongeAge" class="bg-danger text-center py-3 rounded-3 fs-5 d-none mt-2">Enter valid age</p>
+                </div>
+                <div class="col-md-6">
+                    <input class="w-100 bg-black border-white py-2 px-3 text-white rounded-2" type="password"
+                        placeholder="Enter Your password" id="passwordInput" oninput="validatePassword()">
+                    <p id="wrongePassword" class="bg-danger text-center py-3 rounded-3 fs-5 d-none px-3 mt-2">Enter
+                        valid password *Minimum eight characters, at least one letter and one number:</p>
+                </div>
+                <div class="col-md-6">
+                    <input class="w-100 bg-black border-white py-2 px-3 text-white rounded-2" type="password"
+                        placeholder="Repassword" id="repasswordInput" oninput="validateRepassword()">
+                    <p id="wrongeRepassword" class="bg-danger text-center py-3 rounded-3 fs-5 d-none mt-2">Enter valid
+                        repassword</p>
+                </div>
+
+
+            </div>
+
+        </div>
+        <button id="submitBtn" disabled class="btn btn-outline-danger  px-2 mx-auto mt-3">Submit</button>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
